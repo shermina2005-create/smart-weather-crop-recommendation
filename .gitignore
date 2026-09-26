@@ -1,0 +1,5 @@
+﻿venv/
+data/satellite/
+__pycache__/
+*.pyc
+data/weather/Cairo-Weather.csv
