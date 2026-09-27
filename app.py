@@ -98,11 +98,18 @@ def predict_satellite(image):
 
     model = load_satellite_model()
 
-    class_names = sorted([
-        folder.name
-        for folder in Path("data/satellite").iterdir()
-        if folder.is_dir()
-    ])
+    class_names = [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+]
 
     img = load_img(
         image,
